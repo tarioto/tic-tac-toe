@@ -1,0 +1,12 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+.square {
+    background-color:mat-color($mat-grey, 200);
+    height: 5em;
+    width: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}

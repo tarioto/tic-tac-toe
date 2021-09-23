@@ -1,0 +1,16 @@
+<mat-card class="card">
+    <mat-card-content>
+        <mat-card-header *ngIf="this.player">
+            <mat-card-title *ngIf="this.player" [ngClass]="this.player === 1 ? 'red-text' : 'blue-text'">Player {{this.player}}</mat-card-title>
+            <mat-card-subtitle>it is your turn</mat-card-subtitle>
+        </mat-card-header>
+        <div class="board-container">
+            <div *ngFor="let row of board; let rowIndex = index">
+                <div *ngFor="let square of row; let colIndex = index">
+                    <app-square [square]="square" [rowIndex]="rowIndex" [colIndex]="colIndex"
+                        (squareClicked)="squareClicked($event)"></app-square>
+                </div>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>
