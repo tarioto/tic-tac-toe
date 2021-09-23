@@ -49,7 +49,7 @@ export class GameComponent implements OnInit {
 
   openDialog(message: string): void {
     const dialogRef = this.dialog.open(WinnerComponent, {
-      data: { winner: message },
+      data: { winner: message, player: this.game._winner },
     })
 
     dialogRef.afterClosed().subscribe((result) => {
