@@ -4,6 +4,7 @@ const app = express()
 const globalGameState: any = {}
 
 app.use(express.json())
+app.use(express.static('tic-tac-toe'))
 
 
 // TODO: Need an API to call to start a new game.
