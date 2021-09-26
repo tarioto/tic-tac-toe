@@ -30,8 +30,7 @@
   "scripts": {
     "build": "tsc",
     "build-all": "tsc && cd frontend && ng build",
-    "start": "tsc & node .",
-    "dev": "tsc -w & nodemon .",
+    "start": "tsc -w & nodemon .",
     "test": "jest"
   }
 }
