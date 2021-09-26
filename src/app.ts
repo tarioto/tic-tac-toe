@@ -31,7 +31,7 @@ app.post('/api/move', async (req, res) => {
   const gameId = body.gameId
   const player = body.player
   const position = body.position
-  const message = globalGameState[gameId].move(position[0], position[1], player)
+  const message = globalGameState[gameId].move(position, player)
   const result = {
     game: globalGameState[gameId],
     message,

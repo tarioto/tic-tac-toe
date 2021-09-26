@@ -37,12 +37,15 @@ class TicTacToeGame {
     return this._winner
   }
 
-  move(x: number, y: number, player: number): string {
-    if (this._board[x][y] === 0 && this._currentPlayer === player) {
-      this._board[x][y] = player
-      this._currentPlayer = player === 1 ? 2 : 1
+  move(position: number[], player: number): string {
+    if (
+      this._board[position[0]][position[1]] === 0 &&
+      this._currentPlayer === player
+    ) {
+      this._board[position[0]][position[1]] = player
+      this._currentPlayer = player === 1 ? -1 : 1
       this._moveCount++
-      if (isWinner(this._board, player)) {
+      if (isWinner(this._board, player, position)) {
         this._winner = player
         return `Player ${player} wins!`
       }
