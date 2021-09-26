@@ -35,6 +35,14 @@ This is an example of how to list things you need to use the software and how to
    node dist/index.js
    ```
 
+### Run tests
+
+1. test
+   ```sh
+   npm test
+   ```
+
+
 ### Run development
 
 1. run backend
