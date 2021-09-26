@@ -11,7 +11,7 @@ export class WinnerComponent implements OnInit {
     public dialogRef: MatDialogRef<WinnerComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any
   ) {
-    dialogRef.disableClose = true;
+    dialogRef.disableClose = true
   }
 
   ngOnInit(): void {}

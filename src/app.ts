@@ -6,7 +6,6 @@ const globalGameState: any = {}
 app.use(express.json())
 app.use(express.static('tic-tac-toe'))
 
-
 // TODO: Need an API to call to start a new game.
 // The response should give me some kind of ID for me to use in other
 // API calls to tell the backend what game I am referring to
@@ -45,4 +44,3 @@ app.get('/api/global', async (req, res) => {
 })
 
 export default app
-

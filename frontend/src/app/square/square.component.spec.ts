@@ -1,25 +1,24 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { SquareComponent } from './square.component';
+import { SquareComponent } from './square.component'
 
 describe('SquareComponent', () => {
-  let component: SquareComponent;
-  let fixture: ComponentFixture<SquareComponent>;
+  let component: SquareComponent
+  let fixture: ComponentFixture<SquareComponent>
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SquareComponent ]
-    })
-    .compileComponents();
-  });
+      declarations: [SquareComponent],
+    }).compileComponents()
+  })
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SquareComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    fixture = TestBed.createComponent(SquareComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})

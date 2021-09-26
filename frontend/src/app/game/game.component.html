@@ -1,12 +1,32 @@
 <div class="game-container">
-    <mat-toolbar color="primary">
-        <span>Tic Tac Toe</span>
-        <span class="spacer"></span>
-        <button *ngIf="this.game" (click)="startNewGame()" mat-raised-button color="accent">Start new game</button>
-    </mat-toolbar>
+  <mat-toolbar color="primary">
+    <span>Tic Tac Toe</span>
+    <span class="spacer"></span>
+    <button
+      *ngIf="this.game"
+      (click)="startNewGame()"
+      mat-raised-button
+      color="accent"
+    >
+      Start new game
+    </button>
+  </mat-toolbar>
 
-    <div class="board-container">
-        <app-board *ngIf="this.game" [board]="this.game._board" [player]="this.game._currentPlayer" (makeMove)="makeMove($event)"></app-board>
-        <button class="first-start" *ngIf="!this.game" (click)="startNewGame()" mat-raised-button color="accent">Play tic tac toe</button>
-    </div>
+  <div class="board-container">
+    <app-board
+      *ngIf="this.game"
+      [board]="this.game._board"
+      [player]="this.game._currentPlayer"
+      (makeMove)="makeMove($event)"
+    ></app-board>
+    <button
+      class="first-start"
+      *ngIf="!this.game"
+      (click)="startNewGame()"
+      mat-raised-button
+      color="accent"
+    >
+      Play tic tac toe
+    </button>
+  </div>
 </div>
