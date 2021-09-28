@@ -4,7 +4,7 @@
       <mat-card-title
         *ngIf="this.player"
         [ngClass]="this.player === 1 ? 'red-text' : 'blue-text'"
-        >Player {{ this.player }}</mat-card-title
+        >Player {{ this.player === 1 ? 1 : 2 }}</mat-card-title
       >
       <mat-card-subtitle>it is your turn</mat-card-subtitle>
     </mat-card-header>
